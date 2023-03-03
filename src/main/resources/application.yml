@@ -1,0 +1,29 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create
+      dialect: org.hibernate.dialect.MySQL5Dialect
+    show-sql: true
+    generate-ddl: true
+  datasource:
+    url: jdbc:mysql://localhost:3306/employe?useSSL=false
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+logging:
+  level:
+    root: error
+    com:
+      yobante: INFO
+    org:
+      springframework:
+        boot:
+          web:
+            embedded:
+               tomcat: INFO
+
+server:
+  port: 9000
+
+
